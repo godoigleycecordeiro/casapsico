@@ -1,0 +1,353 @@
+body{ background-color:#fff9e1;}
+
+
+header { position: fixed; 
+   flex-wrap: nowrap;
+  top: 0; 
+  left: 0;
+   width: 100%; 
+   background-color: white; 
+   padding:4px 10px; 
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+   z-index: 1000; border: 0px 0px 5px 0px;
+    border-color: black; }
+
+
+
+#eu {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding: 40px;
+background-color: #cc872dd3;
+height: 350px;
+margin-top: 5%;
+}
+
+
+#eu img {
+width: 350px;
+height: auto;
+margin-left: 38px;
+
+box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+
+.tex p {
+font-size: 30px;
+color: #fff9e1;
+max-width: 400px;
+margin-right: 20px;
+}
+
+  main {
+      margin-top: 100px;   /* espaço para não ficar escondido atrás do header */
+      padding: 20px;
+    }
+
+.name { display: flex;
+  justify-content: space-between;  
+  align-items: center; 
+  height: 105px;
+  font-family: 'Seasons'; 
+      font-size: 28px;} 
+
+.name img {
+width: auto;
+height: 165px;
+object-fit: contain;
+margin: 0;
+
+}
+
+
+.name h1 {
+font-size: 32px;
+margin: 0;
+}
+
+
+
+.one{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+     text-align: center;
+
+    
+    }
+
+a{text-decoration: none; 
+ color:black;
+ font-family: 'Seasons', 
+  }
+
+
+.especialidade {
+  display: flex;
+  align-items: center; /* alinha imagem e texto no centro */
+  gap: 20px; /* espaço entre imagem e texto */
+  margin-bottom: 30px; /* espaço entre os blocos */
+ 
+}
+
+.especialidade img {
+  width: 355px;
+  height: 255px;
+  object-fit: cover;
+  border-radius: 10px; /* opcional: deixa arredondado */
+}
+
+.especialidade .texto {
+  max-width: 600px; /* limita largura do texto */
+}
+
+.especialidade h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.especialidade p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+
+aboutsobre
+
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+   font-family: 'Seasons', 
+}
+
+
+
+
+
+
+.s1 {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 16px;
+  color: inherit; /* mantém a cor original do seu site */
+   font-family: 'Seasons', 
+}
+
+.foto-bio {
+  float: left; /* imagem à esquerda */
+  width: 220px; /* tamanho reduzido */
+  margin: 0 20px 20px 0; /* espaçamento entre a imagem e o texto */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+}
+
+
+main h2{display: flex;
+justify-content:center ;
+margin-top: 5%;}
+
+
+
+
+.c1 h2{ display:flex ;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+
+.c1 img{
+ display: flex;
+justify-content: center;
+align-items: center;
+ height: 250px;
+ width: 450px;
+
+}
+
+
+
+.c1 {
+    text-align: center;
+}
+.c1 img {
+    display: inline-block; /* garante que a imagem siga o alinhamento do texto */
+}
+
+
+
+/* pgn de contato incone*/
+
+#icon img{
+display: flex;
+
+     margin-top: 50px;
+     
+    border-radius: 25%;
+    width: 25px;
+    height: 25px;
+}
+
+#icon {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* espaço entre ícones */
+    position: relative; /* importante para posicionar o modal em relação aos ícones */
+}
+
+.modal {
+    display: none; 
+    position: absolute; /* relativo ao #icon */
+    top: 50px;          /* distância abaixo dos ícones */
+    left: 50%;           /* posição inicial no meio */
+    transform: translateX(-50%); /* centraliza horizontalmente */
+    background-color: #f2cb99;
+    padding: 20px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+
+
+.modal-conteudo {
+    position: relative;
+}
+
+.fechar-modal {
+
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.end{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 95px;
+
+
+
+}
+/*responsividade  */
+
+
+@media (max-width: 1024px) {
+  #eu img {
+    width: 280px;
+    margin-left: 20px;
+  }
+
+  .tex p {
+    font-size: 24px;
+    max-width: 300px;
+  }
+
+  .especialidade {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .especialidade img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .especialidade .texto {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* HEADER */
+ header .name {
+    flex-direction: row; /* continua na mesma linha */
+    justify-content: space-between; /* nome à esquerda, logo à direita */
+    align-items: center;
+     height: 75px;
+  }
+
+  header .name h1 {
+    font-size: 15px;
+  }
+
+  header .img  {
+    height: 15px;
+
+    
+  }
+
+  header .one {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  header .one a {
+    font-size: 14px;
+    padding: 3px 6px;
+  }
+
+  /* SEÇÃO PRINCIPAL */
+  #eu {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  #eu img {
+    width: 200px;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .tex p {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  /* MODAL */
+  .modal-conteudo {
+    width: 95%;
+    max-width: 300px;
+  }
+
+  /* MAPA */
+  .c1 a img {
+    max-width: 300px;
+  }
+
+  /* BIO FOTO */
+  .foto-bio {
+    width: 180px;
+    margin: 0 auto 20px auto;
+    float: none;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .modal-conteudo {
+    width: 95%;
+    max-width: 300px; 
+  }
+
+  .modal {
+    top: 60px; /* se quiser um pouco mais de distância em telas menores */
+  }
+}
