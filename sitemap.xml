@@ -1,5 +1,24 @@
-https://casapsico.com/
-https://casapsico.com/biografia
-https://casapsico.com/palestras
-https://casapsico.com/workshops
-https://casapsico.com/contato
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.casapsico.com.br/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.casapsico.com.br/aboutsobre.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.casapsico.com.br/aboutcurso.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.casapsico.com.br/aboutwork.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.casapsico.com.br/aboutcontato.html</loc>
+  </url>
+
+</urlset>
