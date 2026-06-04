@@ -21,7 +21,7 @@ window.onclick = function(event) {
 
 
   const numeroClinica = "5511940746685";
-  const mensagem = "Olá, gostaria de informações sobre a clínica .";
+  const mensagem = "Olá, gostaria de informações sobre a clínica /consultas.";
 
   document.getElementById("whatsappIcon").addEventListener("click", function() {
     const url = `https://wa.me/${numeroClinica}?text=${encodeURIComponent(mensagem)}`;
